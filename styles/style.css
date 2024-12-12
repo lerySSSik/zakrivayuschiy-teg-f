@@ -13,4 +13,347 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-family-basic);
+  font-variation-settings: "wght", var(--font-weight-basic);
+  color: var(--color-black);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: var(--background-image);
+}
+
+/* ----------header---------- */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  block-size: clamp(200px, 56vh, 368px);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  row-gap: 20px;
+}
+
+.card {
+  inline-size: min(100vi, 700px);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+}
+
+.header_logo {
+  font-family: var(--font-family-accent);
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  line-height: var(--title-line-height);
+  text-transform: uppercase;
+}
+
+.header_point {
+  font-family: var(--font-family-accent);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
+  row-gap: 20px;
+
+}
+
+/* --------------------main_secrion------------------ */
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 51px;
+  align-items: center;
+}
+
+.section_image {
+  position: relative;
+}
+
+.section_card {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+
+
+}
+
+.section_title {
+  font-weight: var(--font-weight-accent);
+  font-size: var(--basic-size);
+  line-height: var(--section-height);
+  padding: 5px 0 5px 10px;
+ 
+}
+
+.section_label {
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  opacity: 0.5;
+  color: var(--color-black);
+  text-shadow: 0 0 3px var(--color-white);
+  font-family: var(--font-family-accent);
+  z-index: 1;
+  font-size: 14px;
+  line-height: 14px;
+  mix-blend-mode: hard-light;
+}
+
+.section_pic {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit:cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+}
+
+.card_footer {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
+}
+
+.content_footer {
+  font-size: var(--basic-size);
+  line-height: var(--basic-line-height);
+}
+
+/* -----------btn-------------- */
+
+.button-like {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px
+}
+
+.button {
+  width: 130px;
+  height: 38px;
+  border: 2px solid var(--color-black);
+  font-family: var(--font-family-accent);
+  font-size: 14px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.5s ease-in-out;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-black);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  color: var(--color-white);
+}
+
+.button:hover:after {
+  transform: scaleX(1);
+}
+
+.button__text {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  mix-blend-mode: difference;
+  color: var(--color-white);
+}
+
+.card__icon-button {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  block-size: 38px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+  padding: 0;
+}
+
+.button_section_footer {
+  block-size: 54px;
+  inline-size: min(100vi, 340px);
+}
+
+.section_discet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.button svg {
+  position: relative;
+  z-index: 1;
+  color: var(--color-white);
+  mix-blend-mode: difference;
+  inline-size: 1.5em;
+  block-size: 1.5em;
+}
+
+/* -----modal----- */
+.modal_window {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.modal {
+  max-width: 353px;
+  width: 100%;
+}
+
+.modal[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-black);
+  z-index: 3;
+  padding: 30px;
+  padding: 30px;
+}
+
+.modal__title {
+  color: currentColor;
+  font-family: var(--font-family-accent);
+  font-size: 14px;
+  line-height: var(--basic-line-height);
+  text-transform: uppercase;
+}
+
+.modal__button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.floppy_icon {
+  inline-size: 4.5rem;
+  block-size: 2.5rem;
+}
+
+.modal::backdrop {
+  opacity: 0.75;
+  background: var(--color-black);
+}
+
+/* -------кнопки---------- */
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--color-black);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-black);
+  transform: scaleX(0);
+  transform-origin: left center;
+  
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.heart_icon:focus {
+  outline: none;
+}
+
+.heart_icon:focus-visible {
+  border: 2px solid var(--color-black); 
+}
+
+/* ------------filter------------ */
+
+.filter-brightness {
+  filter: brightness(2);
+}
+
+.filter-contrast {
+  filter: contrast(2)
+}
+
+.filter-blur {
+  filter: blur(10px);
+}
+
+.filter-opacity-sepia {
+  filter: opacity(80%) sepia(20%);
+} 
+
+.filter-saturate {
+  filter: saturate(10%);
+}
+
+.filter-grayscale {
+  filter: grayscale(1);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+/* -----media-and-support------- */
+ 
+@media (max-width : 376px) {
+.card-header{
+  block-size: 327px;
+  row-gap: 11px;
+}
+
+.header_logo {
+  margin-top: 0;
+}
+
+.header_point {
+  margin-bottom: 10px;
+}
+
+.main {
+  row-gap: 49px;
+}
+
+.section_title {
+  padding: 5px 5px 5px 10px;
+}
+
+.card_footer {
+  padding: 26px;
+}
+
+.button_section_footer {
+  inline-size: 306px;
+  block-size: 84px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.button svg {
+  inline-size: 28px;
+  block-size: 28px;
+}
+}
+
+@supports (-webkit-text-stroke: 1px var(--label-text-shadow)) {
+  .section-label {
+      text-shadow: none;
+      -webkit-text-stroke: 1px var(--color-white);
+  }
 }

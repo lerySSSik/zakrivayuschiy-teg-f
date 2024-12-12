@@ -1,1 +1,24 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --text-color: #000000;
+    --font-family-basic: "Inter", sans-serif;
+    --font-family-accent: "PressStart2P", fantasy;
+    --font-weight-basic: 400;
+    --font-weight-accent: 700;
+    --title-size: 65px;
+    --point-size: 23px;
+    --basic-size: 18px;
+    --title-line-height: 65px;
+    --point-line-height: 65px;
+    --basic-line-height: 21px;
+    --section-height: 21.78px;
+    --contour: #FF0000;
+    --hover: #000000;
+    --sparks: #FF0000;
+    --background-image: repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+              repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
+              repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  
+}
