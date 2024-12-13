@@ -218,7 +218,6 @@
   border: 2px solid var(--color-black);
   z-index: 3;
   padding: 30px;
-  padding: 30px;
 }
 
 .modal__title {
