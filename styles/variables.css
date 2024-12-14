@@ -7,12 +7,10 @@
     --font-family-accent: "PressStart2P", fantasy;
     --font-weight-basic: 400;
     --font-weight-accent: 700;
-    --title-size: 65px;
-    --point-size: 23px;
     --basic-size: 18px;
     --title-line-height: 65px;
-    --point-line-height: 65px;
     --basic-line-height: 21px;
+    --point-line-height: 23px;
     --section-height: 21.78px;
     --contour: #FF0000;
     --hover: #000000;
